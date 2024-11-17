@@ -1,6 +1,7 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "linkcast"
 main = "src/index.ts"
+compatibility_flags = [ "nodejs_compat" ]
 compatibility_date = "2024-11-12"
 
 # Workers Logs
@@ -8,6 +9,17 @@ compatibility_date = "2024-11-12"
 # Configuration: https://developers.cloudflare.com/workers/observability/logs/workers-logs/#enable-workers-logs
 [observability]
 enabled = true
+
+[[r2_buckets]]
+bucket_name = "linkcast"
+preview_bucket_name = "linkcast-preview"
+binding = "R2_BUCKET_MEDIA"
+
+[[kv_namespaces]]
+binding = "KV_ITEMS"
+preview_id = "7b32b982cb9b4a5ebd225123aa9ea745"
+id = "7b954263dd194de08b13015e99079ae5"
+
 
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Worker, running it closer to your back-end infrastructure
