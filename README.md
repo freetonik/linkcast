@@ -1,6 +1,8 @@
 # A "listen-later" podcast generator
 
-Code from my live-coding YouTube video: https://youtu.be/LwnPqUBLDYY
+Code from my live-coding YouTube video:
+
+[![](https://img.youtube.com/vi/LwnPqUBLDYY/0.jpg)](https://www.youtube.com/watch?v=LwnPqUBLDYY)
 
 Develop:
 
